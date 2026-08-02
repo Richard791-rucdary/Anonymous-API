@@ -1,0 +1,13 @@
+.env
+
+
+/server
+/Anonymous-API 
+*.exe
+*.test
+
+/vendor/
+
+.DS_Store
+.idea/
+.vscode/
