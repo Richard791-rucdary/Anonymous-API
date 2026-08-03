@@ -1,0 +1,4 @@
+github.com/joho/godotenv v1.5.1 h1:zdqA7ZCcW7zoA0eKoTyKOzwAzzwLhYRyIpBoMtkB7/E=
+github.com/joho/godotenv v1.5.1/go.mod h1:CQSq+gsVh8+MO2Sr3nBKdYQbr6WjpDgWCNvRTNGL23I=
+go.mongodb.org/mongo-driver/v2 v2.2.4 h1:GgV6V6xKZ8F8Z8V8Z8V8Z8V8Z8V8Z8V8Z8V8Z8V8Z8=
+go.mongodb.org/mongo-driver/v2 v2.2.4/go.mod h1:xxx
