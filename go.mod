@@ -1,5 +1,5 @@
-   module github.com/Richard791-rucdary/Anonymous-API
+module github.com/Richard791-rucdary/Anonymous-API
 
-   go 1.21
+go 1.21
 
-   require go.mongodb.org/mongo-driver/v2 v2.2.4
+require go.mongodb.org/mongo-driver/v2 v2.2.3
