@@ -11,15 +11,13 @@ import (
 
 "encoding/json"
 
-"go.mongodb.org/mongo-driver/bson"
+"go.mongodb.org/mongo-driver/v2/bson"
 
-"go.mongodb.org/mongo-driver/bson/primitive"
+"go.mongodb.org/mongo-driver/v2/mongo"
 
-"go.mongodb.org/mongo-driver/mongo"
+"go.mongodb.org/mongo-driver/v2/mongo/options"
 
-"go.mongodb.org/mongo-driver/mongo/options"
-
-"go.mongodb.org/mongo-driver/mongo/readpref"
+"go.mongodb.org/mongo-driver/v2/mongo/readpref"
 
 )
 
@@ -28,7 +26,7 @@ import (
 var collect *mongo.Collection
 type User struct {
 
-		ID primitive.ObjectID `bson:"_id,omitempty" json:"ID"`
+		ID bson.ObjectID `bson:"_id,omitempty" json:"ID"`
 
 		Text string `bson:"text" json:"text"`
 	}
@@ -133,7 +131,7 @@ write.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 				write.WriteHeader(http.StatusBadRequest)
 				return
 		}
-		obj, err := primitive.ObjectIDFromHex(id)
+		obj, err := bson.ObjectIDFromHex(id)
 		if err != nil {
 				http.Error(write, "Invalid ID, check your ID", http.StatusBadRequest)
 				return
