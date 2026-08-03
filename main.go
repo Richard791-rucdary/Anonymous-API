@@ -11,8 +11,6 @@ import (
 
 "encoding/json"
 
-"github.com/joho/godotenv"
-
 "go.mongodb.org/mongo-driver/bson"
 
 "go.mongodb.org/mongo-driver/bson/primitive"
@@ -152,16 +150,6 @@ write.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 }
 
 func main() {
-
-	ert := godotenv.Load()
-
-if ert != nil {
-
-	log.Fatal(ert)
-}
-
-
-
 client, fail := mongo.Connect(context.TODO(), options.Client().ApplyURI(os.Getenv("MONGO")))
 
 if fail != nil {
