@@ -16,9 +16,6 @@ import (
 "go.mongodb.org/mongo-driver/v2/mongo"
 
 "go.mongodb.org/mongo-driver/v2/mongo/options"
-
-"go.mongodb.org/mongo-driver/v2/mongo/readpref"
-
 )
 
 
@@ -157,7 +154,7 @@ if fail != nil {
 
 defer client.Disconnect(context.TODO())
 
-ers := client.Ping(context.TODO(), readpref.Primary())
+ers := client.Ping(context.TODO(), nil)
 
 if ers != nil{
 
