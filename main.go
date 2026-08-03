@@ -62,7 +62,7 @@ func sendToMe(write http.ResponseWriter, read *http.Request) {
    }
 
 		
-   err = collect.InsertOne(context.TODO(), resp)
+   _, err = collect.InsertOne(context.TODO(), resp)
 
    if err != nil {
 
@@ -135,7 +135,7 @@ write.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 				return
 		}
 		
-		err = collect.DeleteOne(context.TODO(), bson.M{"_id":obj})
+		_, err = collect.DeleteOne(context.TODO(), bson.M{"_id":obj})
 		if err != nil {
 				write.WriteHeader(http.StatusInternalServerError)
 				return
