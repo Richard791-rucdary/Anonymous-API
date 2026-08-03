@@ -1,4 +1,0 @@
-cloud.google.com/go v0.65.0/go.mod h1:PjpQ7V0BQibwip9MVvTwbvsxre7FJqxv2xsHkUDxwwU=
-go.mongodb.org/mongo-driver/v2 v2.2.3 h1:vJvTqZ1R5tW8gLQ1X9K8mQ2pN7sF3dA4bC5eD6fG7hI=
-go.mongodb.org/mongo-driver/v2 v2.2.3/go.mod h1:Q8l9wJ0k1L2mN3oP4qR5sT6uV7wX8yZ9aB0cD1eF2g=
-golang.org/x/sys v0.0.0-20210124154548-22da57e567ec/go.mod h1:h1NjWce9XRLuhpCLMQxaTbN0bc4znEeT5L4A7gY8Hk8=
